@@ -304,110 +304,11 @@
 }
 
 .image-gallery{
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: left; */
+ padding: 0 15px;
   margin-bottom: 30px;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 1.5rem;
- grid-template-areas: 'img-1 img-1 img-2 img-3 img-3';  */
-}
-.image-gallery a{
-  /* width: 20rem;
-  height: 20rem; */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-.image-gallery a i{
-  font-size: 3rem;
-  position: relative;
-  z-index: 100;
-  padding: 1rem 3rem;
-  border: 2px solid red;
-  border-radius: .4rem;
-  opacity: 0;
-  transition: opacity .5s;
-  
-}
-.image-gallery a::before{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top:0;
-  left:0;
-  background-color: blue;
-  opacity: 0;
-  transition: opacity .5s;
-}
-.image-gallery a:hover i,
-.image-gallery a:hover::before{
-  opacity: 1;
-}
-.img-1{
- 
-  background-image: url("images/multibox.jpg");
-}
-.img-2{
 
-  background-image: url("images/multibox-2.jpg");
 }
-.img-3{
- 
-  background-image: url("images/pink-black.jpg");
-}
-.img-4{
 
-  background-image: url("images/pink-black-2.jpg");
-}
-.img-5{
-
-  background-image: url("images/Black-red-6 (1).jpg");
-}
-.img-6{
-
-  background-image: url("yellow-origami-2.jpg");
-}
-.img-7{
-
-  background-image: url("images/black-packing (1).jpg");
-}
-.img-8{
-
-  background-image: url("images/black-packing-2.jpg");
-}
-.img-9{
-
-  background-image: url("images/Black-red.jpg");
-}
-.img-10{
-  
-  background-image: url("images/Black-red-7.jpg");
-}
-.img-11{
-
-  background-image: url("images/Black-red-2.jpg");
-}
-.img-12{
-
-  background-image: url("images/Black-red-3.jpg");
-}
-.img-13{
-
-  background-image: url("images/Black-red-4 (1).jpg");
-}
-.img-14{
-
-  background-image: url("images/banner.jpg");
-}
 
 /* .image-gallery img {
 
@@ -634,6 +535,7 @@ height: 217px;
       background-color: #212121;
       font-family: 'Roboto', sans-serif;
       border-color: #212121;
+    
     }
     .details-cards .card {
       width: 100%;
@@ -741,11 +643,26 @@ height: 217px;
     }
     .our-products .product-cards .product {
       width: 183px;
+      margin: 6px 6px;
   }
   
     .our-products .product-cards .product {
       padding: 9px;
   }
+  }
+  @media (min-width: 320px) and (max-width: 435px){
+    .product p{
+      font-size: 14px;
+    }
+    .our-products .product-cards .product {
+      width: 177px;
+      margin: 6px 6px;
+      padding: 8px;
+  }
+  .my-btn{
+    padding: .375rem .55rem;
+  }
+
   }
 
   
