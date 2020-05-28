@@ -144,21 +144,21 @@
 }
 
              /* ******************************OUR PRODUCTS ************************ */
-  .our-products, .products-detail, .about-us-container, .contact-us-container{
+  .our-products, .products-detail, .about-us-container, .contact-us-container, .gallery{
       padding: 20px 0px;
   }
 
-  .our-products h1, .products-detail h1, .about-us-container h1, .contact-us-container h1{
+  .our-products h1, .products-detail h1, .about-us-container h1, .contact-us-container h1, .gallery h1{
     font-family: 'Anton', sans-serif;
     color: #212121; 
     text-align: center;
     letter-spacing: 2px;
   }
-  .about-us-container h1, .contact-us-container h1{
+  .about-us-container h1, .contact-us-container h1, .gallery h1{
     color: #B71C1C ;
   }
 
-  .our-products hr, .products-detail hr, .about-us-container hr, .contact-us-container hr{
+  .our-products hr, .products-detail hr, .about-us-container hr, .contact-us-container hr, .gallery hr{
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0))
@@ -302,6 +302,128 @@
   width: 200px;
   margin: 12px 1px;
 }
+
+.image-gallery{
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: left; */
+  margin-bottom: 30px;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+ grid-template-areas: 'img-1 img-1 img-2 img-3 img-3';  */
+}
+.image-gallery a{
+  /* width: 20rem;
+  height: 20rem; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.image-gallery a i{
+  font-size: 3rem;
+  position: relative;
+  z-index: 100;
+  padding: 1rem 3rem;
+  border: 2px solid red;
+  border-radius: .4rem;
+  opacity: 0;
+  transition: opacity .5s;
+  
+}
+.image-gallery a::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: blue;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.image-gallery a:hover i,
+.image-gallery a:hover::before{
+  opacity: 1;
+}
+.img-1{
+ 
+  background-image: url("images/multibox.jpg");
+}
+.img-2{
+
+  background-image: url("images/multibox-2.jpg");
+}
+.img-3{
+ 
+  background-image: url("images/pink-black.jpg");
+}
+.img-4{
+
+  background-image: url("images/pink-black-2.jpg");
+}
+.img-5{
+
+  background-image: url("images/Black-red-6 (1).jpg");
+}
+.img-6{
+
+  background-image: url("yellow-origami-2.jpg");
+}
+.img-7{
+
+  background-image: url("images/black-packing (1).jpg");
+}
+.img-8{
+
+  background-image: url("images/black-packing-2.jpg");
+}
+.img-9{
+
+  background-image: url("images/Black-red.jpg");
+}
+.img-10{
+  
+  background-image: url("images/Black-red-7.jpg");
+}
+.img-11{
+
+  background-image: url("images/Black-red-2.jpg");
+}
+.img-12{
+
+  background-image: url("images/Black-red-3.jpg");
+}
+.img-13{
+
+  background-image: url("images/Black-red-4 (1).jpg");
+}
+.img-14{
+
+  background-image: url("images/banner.jpg");
+}
+
+/* .image-gallery img {
+
+margin: 10px;
+width: 217px;
+height: 217px;
+  object-fit: cover;
+} */
+.fit-image{
+  height: 100%;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 0px 8px;
+}
+
+
 
           /********************** footer **************************/
   .footer-container{
@@ -533,7 +655,7 @@
         width: 225px;
         padding: 15px;
     }
-    .our-products h1, .products-detail h1, .about-us-container h1, .contact-us-container h1{
+    .our-products h1, .products-detail h1, .about-us-container h1, .contact-us-container h1, .gallery h1{
       font-size: 31px;
     }
     .product p{
@@ -569,7 +691,7 @@
   }
 
   @media (max-width: 575px) {
-    .our-products h1, .products-detail h1, .about-us-container h1, .contact-us-container h1{
+    .our-products h1, .products-detail h1, .about-us-container h1, .contact-us-container h1, .gallery h1{
       font-size: 29px;
     }
     .about-us-container .container p{
@@ -582,6 +704,7 @@
   
       padding: 12px;
   }
+ 
     .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
       color: #ffffff;
     }
